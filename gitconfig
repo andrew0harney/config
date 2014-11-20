@@ -1,0 +1,22 @@
+[core]
+	excludesfile = /Users/andrew/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Andrew O'Harney
+	email = andy@singletrack.com
+[push]
+	default = matching
+[alias]
+	co = checkout
+	pish = push
+[merge]
+	tool = araxis
+
+[diff]
+	tool = araxis
