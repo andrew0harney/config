@@ -1,5 +1,5 @@
 Configuration is Iterm2 with powerline font and Solarized Dark theme.
-Added scripts Git scripts from [Remy](https://gist.github.com/remy/6079223#file-remy-zsh-theme). 
+Added Git scripts from [Remy](https://gist.github.com/remy/6079223#file-remy-zsh-theme). 
 Using tmux for screen splitting
 
 
