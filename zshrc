@@ -112,3 +112,9 @@ alias pgstop='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serve
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
 fi
+
+
+export PATH="/Users/andrew/miniconda/bin:$PATH"
+alias workon='source activate'
+alias workoff='source deactivate'
+alias mkvirtualenv='conda create -n'
