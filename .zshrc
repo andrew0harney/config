@@ -108,3 +108,7 @@ alias src='source ~/.zshrc'
 alias tpair='tmux new-session -s pair'
 alias c='clear'
 alias pgstop='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'
+
+if [[ ! $TERM =~ screen ]]; then
+    exec tmux
+fi
