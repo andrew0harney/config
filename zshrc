@@ -45,7 +45,7 @@ ZSH_THEME="remy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git  git-flow  brew  bundler  gem  npm  pip  rails rvm tmux heroku docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,8 +113,17 @@ if [[ ! $TERM =~ screen ]]; then
     exec tmux
 fi
 
-
 export PATH="/Users/andrew/miniconda/bin:$PATH"
 alias workon='source activate'
 alias workoff='source deactivate'
 alias mkvirtualenv='conda create -n'
+alias chi='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --allow-running-insecure-content &'
+
+export POSTGRES_PASSWORD=testpassword
+export STRIPE_KEY_PUBLISHABLE=pk_test_RdPQcjj07WPTj15dX3mLsF5y
+export SENDGRID_PASSWORD=sk_live_9tqyeiBk6TbMDQodfLYrdBOv
+export STRIPE_KEY_SECRET=sk_test_xf6r2ZvwbR6BxD80Ny4YrJEf
+
+export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/local/bin:$PATH
+
